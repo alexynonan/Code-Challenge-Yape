@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aZJ-6U-Cem">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="Code_Challenge_Yape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Iek-so-Nxl">
+                                <rect key="frame" x="186.66666666666666" y="488.66666666666669" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUU-IL-69u">
+                                <rect key="frame" x="146.66666666666666" y="388.66666666666669" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="DbW-9f-3Ev"/>
+                                    <constraint firstAttribute="width" constant="100" id="XjX-p9-r4Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" name="color_Two"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_three"/>
+                        <constraints>
+                            <constraint firstItem="fUU-IL-69u" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="AxO-fU-4LT"/>
+                            <constraint firstItem="Iek-so-Nxl" firstAttribute="centerX" secondItem="fUU-IL-69u" secondAttribute="centerX" id="o65-dQ-boj"/>
+                            <constraint firstItem="Iek-so-Nxl" firstAttribute="top" secondItem="fUU-IL-69u" secondAttribute="bottom" id="vUZ-Yo-tjA"/>
+                            <constraint firstItem="fUU-IL-69u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zz1-Sm-oFh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ice-sW-ZcJ"/>
+                    <connections>
+                        <outlet property="loadActivity" destination="Iek-so-Nxl" id="c33-es-oPq"/>
+                        <segue destination="tSV-WM-1BA" kind="show" identifier="HomeViewController" id="9Sb-Gz-8UU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uFq-1A-R3A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="aZJ-6U-Cem" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X62-gY-a6i">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="d9y-rm-8sU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fm-Cw-71W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-115" y="4"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="Dwe-xZ-eyC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="tSV-WM-1BA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="mjE-vP-6Km"/>
+                    <navigationItem key="navigationItem" id="Hwd-uN-tzW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVd-dx-kgH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_Two">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="color_three">
+            <color red="1" green="0.99215686274509807" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
