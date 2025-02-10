@@ -72,5 +72,8 @@ Cmd + U
 ---
 
 ## Contacto
-Desarrollado por **Alexander Ynoñan H.**. Para consultas o colaboración, contáctame a través de GitHub o LinkedIn.
+
+Desarrollado por **Alexander Ynoñan H.**. Para consultas o colaboración, contáctame a través de:
+
+- [LinkedIn](https://www.linkedin.com/in/alexander-johel-ynonan-huayllapuma/)
 
